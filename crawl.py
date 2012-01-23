@@ -19,8 +19,7 @@ def parse(
     if (level > max_level):
         return parsed_links
 
-    if (DEBUG):
-        print("Parsing [level %d] - %s" % (level, target))
+    print("Parsing [level %d] - %s" % (level, target))
 
     try:
         hostname = urlparse(target)[1]
